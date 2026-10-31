@@ -50,6 +50,7 @@ a:active { opacity: 0.7; }
 	max-width: none;
 }
 @media (max-width: 1100px) { .intro br:first-of-type { display: none; } }
+@media (max-width: 760px) { .intro br { display: none; } }
 .intro a { border-bottom: 1px solid transparent; transition: border-color .2s; }
 .intro a:hover { border-color: currentColor; }
 .menu {
@@ -284,6 +285,41 @@ footer {
 	.about-row h2 { margin-top: -0.6rem; }
 	.next { flex-direction: column; }
 	.next .to { text-align: left; }
+}
+
+/* mobile: images run edge to edge, text keeps its margin */
+@media (max-width: 760px) {
+	.hero, .figure, .decision figure, .card .thumb {
+		margin-left: calc(var(--pad) * -1);
+		margin-right: calc(var(--pad) * -1);
+	}
+	.figure figcaption, .decision figcaption { padding-left: var(--pad); padding-right: var(--pad); }
+	.decision figure { margin-top: 0.5rem; }
+}
+
+/* mobile: tighter line spacing */
+@media (max-width: 760px) {
+	body { line-height: 1.38; }
+	.intro { line-height: 1.12; }
+	.subtitle, .stats p, .steps p, .meta p, .jobs span { line-height: 1.35; }
+	.decision h3 { line-height: 1.15; }
+}
+
+
+/* ---------- mobile polish: edge-to-edge images, tighter leading ---------- */
+@media (max-width: 760px) {
+	body { line-height: 1.42; }
+	.intro { line-height: 1.12; }
+	.subtitle, .meta, .stats p, .steps p, .prose p, .decision p, .jobs span { line-height: 1.4; }
+	.stats b { line-height: 1.05; }
+	.decision h3 { line-height: 1.15; }
+	.hero, .figure, .decision figure, .card .thumb {
+		margin-left: calc(var(--pad) * -1);
+		margin-right: calc(var(--pad) * -1);
+	}
+	.grid { gap: 2.25rem; }
+	.card .cap { font-size: 1.05rem; flex-direction: column; gap: 0.1rem; line-height: 1.25; }
+	.figure figcaption, .decision figcaption { padding: 0.6rem var(--pad) 0; }
 }
 
 /* ---------- motion ---------- */
