@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pix Security Controls — Iago Novais</title>
+<meta name="description" content="Designing My Limits and Safe Contacts for millions of Pix users, under a Central Bank deadline.">
+<meta property="og:title" content="Pix Security Controls — Iago Novais">
+<meta property="og:description" content="Designing My Limits and Safe Contacts for millions of Pix users, under a Central Bank deadline.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23f2386b'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='17' font-weight='700' fill='white' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a id="top"></a>
+<header class="top">
+  <p class="intro"><a href="index.html">Iago Novais is a Brazilian product &amp; graphic designer based in São Paulo.<br>Designed Open Finance and Pix journeys at Mercado Pago,<br>4× Open Summit Awards winner.</a></p>
+  <div class="menu-spacer"></div>
+</header>
+<nav class="menu" aria-label="Main">
+  <a href="index.html" aria-current="page">Work</a>
+  <a href="about.html">About</a>
+  <a href="https://www.linkedin.com/in/iagonovais/" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="mailto:iago.novais5@gmail.com">Email</a>
+</nav>
+
+<main class="case">
+<h1>Pix Security Controls</h1>
+<p class="subtitle">Designing My Limits and Safe Contacts for millions of Pix users, under a Central Bank deadline.</p>
+<div class="meta"><div><span class="label">Role</span><p>Mid-level Product Designer</p></div><div><span class="label">Team</span><p>PM, engineering, UX writer, senior designer</p></div><div><span class="label">Platform</span><p>iOS &amp; Android · Personal and business accounts</p></div><div><span class="label">Timeline</span><p>Shipped July 3, 2023</p></div></div>
+<figure class="hero reveal"><img src="sc-hero.jpg" alt="A person at an ATM holding a phone with a limit-increase confirmation" width="1440" height="900" loading="eager" decoding="async"></figure>
+<div class="stats reveal" style="--n:4"><div><b>6</b><p>Ways to add a safe contact, in one unified flow</p></div><div><b>5 + 1</b><p>Limit-adjustment flows, plus the day/night period change</p></div><div><b>24 h vs. instant</b><p>Increasing a limit takes up to 24 h; decreasing is immediate</p></div><div><b>1 quarter</b><p>From new regulation to launch</p></div></div>
+<section class="cols reveal">
+<div class="prose"><h2>Summary</h2><p>In 2023, Brazil’s Central Bank required every payment app to let users set Pix limits and manage trusted contacts. At Mercado Pago, I designed My Limits and Safe Contacts, balancing protection against theft with everyday payment friction. We shipped every mandatory feature by the July 3 deadline.</p><p>As a mid-level designer on the Pix squad, working with a UX writer and a senior designer, I designed the navigation architecture, flows and handoff for My Limits, limits by period and Safe Contacts, for individual and business accounts, plus the new limit cards, feedback screens and notifications.</p></div>
+<div class="prose"><h2>Context &amp; challenge</h2><p>Pix is Brazil’s instant payment system, regulated by the Central Bank. Version 6.4 of the Pix Experience Manual required features the app didn’t have: trusted contacts, day and night limits, and limit-increase requests for Pix Saque (cash withdrawal at stores) and Pix Troco (cash back on purchases). All of it had to fit into a Pix experience used by millions, within one quarter.</p><p>The law fixed the features and the deadline. The menu structure, how limits are explained, error states and notifications were open to design, and that is where I spent my effort.</p></div>
+</section>
+<div class="ticker" aria-hidden="true"><div class="track">My Limits <i>Transfers → Withdrawals → Transaction period → Safe Contacts</i><em>✦</em>Increase <i>New value → Confirm → Face ID → Up to 24 h → Push notification</i><em>✦</em>Safe Contacts <i>CPF · CNPJ · Phone · E-mail · Random key · Past transfer</i><em>✦</em>My Limits <i>Transfers → Withdrawals → Transaction period → Safe Contacts</i><em>✦</em>Increase <i>New value → Confirm → Face ID → Up to 24 h → Push notification</i><em>✦</em>Safe Contacts <i>CPF · CNPJ · Phone · E-mail · Random key · Past transfer</i><em>✦</em></div></div>
+<section><h2>Process</h2><div class="steps reveal">
+<div><span class="n">01</span><h3>Benchmark</h3><p>Studied Brazilian payment apps for the symbols and imagery tied to security and limits in Brazil, which set the tone for the limit cards and the menu UI.</p></div>
+<div><span class="n">02</span><h3>Map every case</h3><p>Mapped every use case in the manual, plus errors and edge cases, before drawing screens.</p></div>
+<div><span class="n">03</span><h3>Validate content</h3><p>Ran a card sorting and a wording test with the UX writer (8 internal participants, treated as directional).</p></div>
+<div><span class="n">04</span><h3>Review before handoff</h3><p>Feedback rounds with domain specialists, design system and engineering.</p></div>
+</div>
+<figure class="figure reveal"><img src="sc-process.jpg" alt="Delivery board of the limit-increase flow, from the calculator to Face ID, success, error and notifications" width="2400" height="950" loading="lazy" decoding="async"></figure>
+</section>
+<section><h2>Key decisions</h2>
+<div class="decision reveal"><div class="text"><h3>01 — Ordering the menu around a real fear</h3><p>We framed the card sorting around losing your phone or being robbed at night. Among 8 internal colleagues, 7 put Transfers first and 5 put Safe Contacts last. The final order is Transfers → Withdrawals → Transaction period → Safe Contacts: limits come first, and the exception to the rules comes last.</p><p>All 8 also chose “R$ 1,000 for the period” over “R$ 1,000 in total”. Next to “remaining”, the word “total” made it unclear whether the amount was the full limit or what was left.</p></div><figure><img src="sc-d1.jpg" alt="Final My Limits menu: Transfers, Withdrawals, Transaction period, Safe Contacts" width="1600" height="900" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>02 — Designing for failure, not just the happy path</h3><p>I designed every state before the screens, from setting a limit to R$ 0 (which blocks transfers) to exceeding the R$ 50k cap. Increases take up to 24 hours while decreases are immediate, so the confirmation and the push notification explain the delay. Users never have to wonder whether a change worked.</p></div><figure><img src="sc-d2.jpg" alt="Limit calculator states with behaviour annotations: max value, zero, same value, above the cap" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>03 — Reusing what users already know</h3><p>Safe Contacts reuses the bottom sheet and the CPF / CNPJ / phone tag from Pix key registration, already familiar to users and to engineering. The only new components were the day/night limit cards and their variations, documented with engineering.</p><p>Whether someone adds a contact by CPF, CNPJ, phone, e-mail, random key or a past transfer, the flow uses one unified input and the same error states: key not found, attempt limit reached, own account, already registered.</p></div><figure><img src="sc-d3.jpg" alt="Night limit card showing the limit for the period and what remains" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
+</section>
+<section class="cols reveal">
+<div class="prose"><h2>Outcome</h2><p>We shipped on the regulatory deadline, and the work was validated by the leadership team for payments and money rails. Impact data is confidential, but I’m happy to walk through the decisions in an interview.</p></div>
+<div class="prose"><h2>What I learned</h2><p>Designing under a regulatory deadline taught me to separate what is fixed by law from what is open to design, and to spend testing time only on the second.</p></div>
+</section>
+<nav class="next"><a href="open-finance.html"><small>Previous</small>← Open Finance Consent Journeys</a><a class="to" href="pix-desktop.html"><small>Next project</small>Pix Area on Desktop →</a></nav>
+</main>
+<footer>
+  <span>© 2026 Iago Novais</span>
+  <a href="#top" onclick="window.scrollTo({top:0});return false;">Top ↑</a>
+  <span id="clock"></span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

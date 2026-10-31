@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Finance Consent Journeys — Iago Novais</title>
+<meta name="description" content="Designing some of Brazil’s first data-sharing consent flows, for a concept users had never seen before.">
+<meta property="og:title" content="Open Finance Consent Journeys — Iago Novais">
+<meta property="og:description" content="Designing some of Brazil’s first data-sharing consent flows, for a concept users had never seen before.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23f2386b'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='17' font-weight='700' fill='white' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a id="top"></a>
+<header class="top">
+  <p class="intro"><a href="index.html">Iago Novais is a Brazilian product &amp; graphic designer based in São Paulo.<br>Designed Open Finance and Pix journeys at Mercado Pago,<br>4× Open Summit Awards winner.</a></p>
+  <div class="menu-spacer"></div>
+</header>
+<nav class="menu" aria-label="Main">
+  <a href="index.html" aria-current="page">Work</a>
+  <a href="about.html">About</a>
+  <a href="https://www.linkedin.com/in/iagonovais/" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="mailto:iago.novais5@gmail.com">Email</a>
+</nav>
+
+<main class="case">
+<h1>Open Finance Consent Journeys</h1>
+<p class="subtitle">Designing some of Brazil’s first data-sharing consent flows, for a concept users had never seen before.</p>
+<div class="meta"><div><span class="label">Role</span><p>Product Designer</p></div><div><span class="label">Ownership</span><p>Data-in and data-out journeys</p></div><div><span class="label">Platform</span><p>iOS &amp; Android</p></div><div><span class="label">Timeline</span><p>2021–2022</p></div></div>
+<figure class="hero reveal"><img src="of-hero.jpg" alt="Two Open Finance screens: choosing the source bank and reviewing the consent" width="1440" height="900" loading="eager" decoding="async"></figure>
+<div class="stats reveal" style="--n:3"><div><b>4×</b><p>Open Summit Awards in 2022, including Case of the Year</p></div><div><b>2</b><p>Journeys designed: bringing data in and sharing data out</p></div><div><b>1st</b><p>Wave of Open Finance in Brazil, under new Central Bank rules</p></div></div>
+<section class="cols reveal">
+<div class="prose"><h2>Summary</h2><p>I designed the consent and data-sharing journeys for Open Finance at Mercado Pago, among the first in Brazil under the new Central Bank rules: how people bring their data from other banks into the app, and how they share Mercado Pago data with other institutions.</p></div>
+<div class="prose"><h2>Context &amp; challenge</h2><p>Open Finance asks people to share sensitive financial data between institutions. The Central Bank defined strict rules for every step, and users had no mental model for the concept. The flow had to be compliant, transparent and simple enough that people wouldn’t abandon it halfway.</p></div>
+</section>
+<div class="ticker" aria-hidden="true"><div class="track">Data-in <i>Home → Choose source bank → Data, purpose &amp; duration → Review &amp; confirm → Redirect → Bank login &amp; authorization → Data connected</i><em>✦</em>Data-out <i>Third-party app → Redirect → Login · biometrics → Who asks, data, purpose &amp; duration → Choose accounts → Authorize → Shared</i><em>✦</em>Data-in <i>Home → Choose source bank → Data, purpose &amp; duration → Review &amp; confirm → Redirect → Bank login &amp; authorization → Data connected</i><em>✦</em>Data-out <i>Third-party app → Redirect → Login · biometrics → Who asks, data, purpose &amp; duration → Choose accounts → Authorize → Shared</i><em>✦</em></div></div>
+<section><h2>Process</h2><div class="steps reveal">
+<div><span class="n">01</span><h3>Regulation into constraints</h3><p>Mapped what the Central Bank made mandatory and what was open to design.</p></div>
+<div><span class="n">02</span><h3>Explore and test</h3><p>Explored variations of the authorization steps and tested them in in-person usability sessions.</p></div>
+<div><span class="n">03</span><h3>Plain language</h3><p>Rewrote the consent copy from legal language into plain language, without losing compliance.</p></div>
+<div><span class="n">04</span><h3>Review before handoff</h3><p>Reviewed every step with legal/compliance and engineering before handoff.</p></div>
+</div>
+<figure class="figure reveal"><img src="of-process.jpg" alt="Delivery board of the review and edit flow for bringing data into Mercado Pago" width="1909" height="977" loading="lazy" decoding="async"></figure>
+</section>
+<section><h2>Key decisions</h2>
+<div class="decision reveal"><div class="text"><h3>01 — Showing where you are in the consent</h3><p>Before any action, users see what data is shared, with which institution and for how long. After launch, metrics showed people abandoning the flow halfway through, so I added a stepper: users always know which step they are on and how much is left to finish.</p></div><figure><img src="of-d1.jpg" alt="Consent steps with a numbered stepper at the top" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>02 — Putting the most-used banks first</h3><p>Choosing where to bring data from is the first step of the flow, and a long list of institutions slowed people down. I looked into which banks users connected most and checked feasibility with engineering: we could surface the most-used banks at the top as shortcuts, with search and the full list right below.</p></div><figure><img src="of-d2.jpg" alt="Bank selection with the most frequent institutions as shortcuts" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>03 — Consent you can see and take back</h3><p>Shared data lives in an easy-to-find menu. We invested in a clear, visual interface so users can track active consents and revoke them at any time.</p></div><figure><img src="of-d3.jpg" alt="Consent cards showing expiring, expired and ended states" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
+</section>
+<section class="cols reveal">
+<div class="prose"><h2>Outcome</h2><p>The journeys launched with Brazil’s first wave of Open Finance and won 4 Open Summit Awards in 2022: Case of the Year, Payment Initiation, Financial Inclusion and Best B2C Case. After launch, I kept iterating on drop-off data, which led to the stepper.</p></div>
+<div class="prose"><h2>What I learned</h2><p>Regulation defines what must be shown, but design decides whether people understand it.</p></div>
+</section>
+<nav class="next"><a href="index.html"><small>Back</small>← All work</a><a class="to" href="pix-security-controls.html"><small>Next project</small>Pix Security Controls →</a></nav>
+</main>
+<footer>
+  <span>© 2026 Iago Novais</span>
+  <a href="#top" onclick="window.scrollTo({top:0});return false;">Top ↑</a>
+  <span id="clock"></span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
