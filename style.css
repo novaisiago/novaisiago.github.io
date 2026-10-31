@@ -330,3 +330,28 @@ footer {
 	.ticker .track { animation: none; }
 	html { scroll-behavior: auto; }
 }
+
+.thanks { margin-top: var(--s3); color: var(--ink-soft); font-style: italic; max-width: 46em; }
+
+/* language switch, pinned bottom-right */
+.lang {
+	position: fixed;
+	right: var(--pad);
+	bottom: var(--pad);
+	z-index: 50;
+	display: flex;
+	gap: 0.3rem;
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+.lang a {
+	background: rgba(255, 255, 255, 0.82);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	border: 1px solid var(--line);
+	padding: 0.32em 0.8em;
+	border-radius: 999px;
+	transition: background .2s, color .2s;
+}
+.lang a:hover, .lang a[aria-current] { background: var(--ink); color: #fff; border-color: var(--ink); }
+footer { justify-content: flex-start; gap: 2rem; padding-bottom: calc(var(--pad) + 2.6rem); }

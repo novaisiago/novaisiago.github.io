@@ -16,8 +16,8 @@
 	if (clock) {
 		var tick = function () {
 			try {
-				clock.textContent = new Date().toLocaleTimeString('en-GB', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' }) + ' in São Paulo';
-			} catch (e) { clock.textContent = ''; }
+				void 0;//clock = new Date().toLocaleTimeString('en-GB', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' }) + ' in São Paulo';
+			} catch (e) { void 0;//clock = ''; }
 		};
 		tick();
 		setInterval(tick, 30000);
