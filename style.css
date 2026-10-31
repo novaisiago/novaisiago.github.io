@@ -384,3 +384,8 @@ footer.home { display: flex; }
 @keyframes vscroll { to { transform: translateY(-50%); } }
 @media (max-width: 760px) { .vmarquee { height: 22rem; } }
 @media (prefers-reduced-motion: reduce) { .vmarquee .vtrack { animation: none; } }
+
+/* about portrait */
+.portrait { background: var(--panel); }
+.portrait img { aspect-ratio: 2 / 3; object-fit: cover; }
+@media (max-width: 760px) { .portrait { margin: 0 calc(var(--pad) * -1); } }
