@@ -355,3 +355,32 @@ footer {
 }
 .lang a:hover, .lang a[aria-current] { background: var(--ink); color: #fff; border-color: var(--ink); }
 footer { justify-content: flex-start; gap: 2rem; padding-bottom: calc(var(--pad) + 2.6rem); }
+
+/* ---------- v5 polish ---------- */
+/* flow strip: one colour, no rules, bigger, arrows only */
+.ticker {
+	border: 0;
+	font-size: clamp(2.2rem, 5.2vw, 4.6rem);
+	letter-spacing: -0.03em;
+	color: var(--ink);
+	padding: 0.1em 0;
+}
+.ticker .track { animation-duration: 90s; }
+.ticker i, .ticker em { all: unset; }
+/* classic link blue on prev/next and inline links */
+.next a:hover { color: #1a0dab; }
+a.inline { text-decoration: underline; text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a.inline:hover { color: #1a0dab; }
+/* desktop-only line break in subtitles */
+@media (max-width: 760px) { br.desk { display: none; } }
+/* footer: Top aligned with the right column */
+footer.inner { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+footer.home { display: flex; }
+@media (max-width: 760px) { footer.inner { grid-template-columns: 1fr auto; gap: 1rem; } }
+/* vertical infinite scroll for process boards */
+.vmarquee { height: 34rem; overflow: hidden; position: relative; }
+.vmarquee .vtrack { animation: vscroll 60s linear infinite; }
+.vmarquee:hover .vtrack { animation-play-state: paused; }
+@keyframes vscroll { to { transform: translateY(-50%); } }
+@media (max-width: 760px) { .vmarquee { height: 22rem; } }
+@media (prefers-reduced-motion: reduce) { .vmarquee .vtrack { animation: none; } }
