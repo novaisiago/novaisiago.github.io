@@ -17,25 +17,26 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
 <a id="top"></a>
-<header class="top">
-  <p class="intro"><a href="index-pt.html">Iago Novais é product designer de fintech, em São Paulo. <br>Projetou jornadas de Open Finance e Pix no Mercado Pago, <br>reconhecidas 4× no Open Summit Awards 2022.</a></p>
+<header class="top inner">
+  <p class="intro"><a href="index-pt.html">Iago Novais</a></p>
   <div class="menu-spacer"></div>
 </header>
 <nav class="menu" aria-label="Main">
   <a href="index-pt.html" aria-current="page">Trabalhos</a>
   <a href="about-pt.html">Sobre</a>
+  <a href="Iago-Novais-Resume.pdf" target="_blank" rel="noopener">Currículo</a>
   <a href="https://www.linkedin.com/in/iagonovais/" target="_blank" rel="noopener">LinkedIn</a>
-  <a href="mailto:iago.novais5@gmail.com">Email</a>
+  <a href="mailto:iago.novais5@gmail.com">Manda um oi :)</a>
 </nav>
 
 <main class="case">
-<h1>Controles de segurança Pix</h1>
-<p class="subtitle">O projeto de Meus Limites e Contatos Seguros para milhões de pessoas que usam Pix,<br class="desk">com prazo definido pelo Banco Central.</p>
+<div class="head"><h1>Controles de segurança Pix</h1>
+<p class="subtitle">O projeto de Meus Limites e Contatos Seguros para milhões de pessoas que usam Pix, com prazo definido pelo Banco Central.</p></div>
 <div class="meta"><div><span class="label">Cargo</span><p>Product Designer</p></div><div><span class="label">Time</span><p>UX lead, 2 product designers, 2 UX writers, PM, desenvolvimento, jurídico</p></div><div><span class="label">Plataforma</span><p>iOS e Android · Contas de pessoa física e jurídica</p></div><div><span class="label">Período</span><p>2023–2024</p></div></div>
 <figure class="hero reveal"><img src="sc-hero.jpg" alt="Pessoa num caixa eletrônico segurando um celular com a confirmação de aumento de limite" width="1440" height="900" loading="eager" decoding="async"></figure>
 <div class="stats reveal" style="--n:4"><div><b>6</b><p>Formas de cadastrar um contato seguro, num fluxo único</p></div><div><b>5 + 1</b><p>Fluxos de ajuste de limite, mais a troca de período diurno/noturno</p></div><div><b>24 h ou na hora</b><p>Aumentar um limite leva até 24 h; diminuir é imediato</p></div><div><b>1 trimestre</b><p>Da nova regulação ao lançamento</p></div></div>
@@ -53,9 +54,9 @@
 <div class="figure vmarquee reveal" role="img" aria-label="Board de entrega do fluxo de aumento de limite, da calculadora ao Face ID, sucesso, erro e notificações"><div class="vtrack"><img src="sc-process-tall.jpg" alt="" width="1600" height="1329" loading="lazy"><img src="sc-process-tall.jpg" alt="" width="1600" height="1329" loading="lazy"></div></div>
 </section>
 <section><h2>Decisões-chave</h2>
-<div class="decision reveal"><div class="text"><h3>01 — Ordenar o menu a partir de um medo real</h3><p>O card sorting partiu de um medo comum: perder o celular ou ser assaltado à noite. Transferências veio em primeiro, por ser a ação mais frequente, e Contatos seguros por último. A ordem final é Transferências → Saques → Período das transações → Contatos seguros: os limites vêm primeiro, e a exceção às regras vem por último.</p><p>No teste de wording, “R$ 1.000 para o período” foi mais claro que “R$ 1.000 no total”. Ao lado de “restantes”, a palavra “total” deixava dúvida se o valor era o limite inteiro ou o que sobrava.</p></div><figure><img src="sc-d1.jpg" alt="Menu final de Meus limites: Transferências, Saques, Período das transações, Contatos seguros" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
-<div class="decision reveal"><div class="text"><h3>02 — Prever exceções, não só o caminho feliz</h3><p>Mapeei e projetei todos os estados antes das telas, de definir um limite em R$ 0 (o que bloqueia transferências) a passar do teto de R$ 50 mil. Aumentos levam até 24 horas e reduções são imediatas, então a tela de confirmação e a notificação push explicam a espera, com uma ilustração que dá contexto. A pessoa nunca fica em dúvida se a mudança funcionou.</p></div><figure><img src="sc-d2.jpg" alt="Estados da calculadora de limite com anotações de comportamento: valor máximo, zero, mesmo valor, acima do teto" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
-<div class="decision reveal"><div class="text"><h3>03 — Otimizar o desenvolvimento com padrões conhecidos</h3><p>Contatos Seguros reaproveita o bottom sheet e a tag CPF / CNPJ / celular do cadastro de chaves Pix. Partir de componentes que já estavam em código reduziu o esforço de desenvolvimento num prazo fixo e manteve os padrões consistentes em todo o Pix. Os únicos componentes novos foram os cards de limite diurno/noturno e suas variações, que refinei em várias rodadas de feedback e documentei com o time de desenvolvimento.</p><p>Seja por CPF, CNPJ, celular, e-mail, chave aleatória ou uma transferência anterior, o fluxo usa um campo único e os mesmos estados de erro: chave não encontrada, limite de tentativas, conta própria, já cadastrado.</p></div><figure><img src="sc-d3.jpg" alt="Card de limite noturno mostrando o limite do período e quanto resta" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>01 — Ordenar o menu a partir de um medo real</h3><p>O card sorting partiu de um medo comum: perder o celular ou ser assaltado à noite. Transferências veio em primeiro, por ser a ação mais frequente, e Contatos seguros por último. A ordem final é Transferências → Saques → Período das transações → Contatos seguros: os limites vêm primeiro, e a exceção às regras vem por último.</p><p>No teste de wording, “R$ 1.000 para o período” foi mais claro que “R$ 1.000 no total”. Ao lado de “restantes”, a palavra “total” deixava dúvida se o valor era o limite inteiro ou o que sobrava.</p></div><figure><img src="sc-d1.jpg" alt="Menu final de Meus limites: Transferências, Saques, Período das transações, Contatos seguros" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>02 — Prever exceções, não só o caminho feliz</h3><p>Mapeei e projetei todos os estados antes das telas, de definir um limite em R$ 0 (o que bloqueia transferências) a passar do teto de R$ 50 mil. Aumentos levam até 24 horas e reduções são imediatas, então a tela de confirmação e a notificação push explicam a espera, com uma ilustração que dá contexto. A pessoa nunca fica em dúvida se a mudança funcionou.</p></div><figure><img src="sc-d2.jpg" alt="Estados da calculadora de limite com anotações de comportamento: valor máximo, zero, mesmo valor, acima do teto" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>03 — Otimizar o desenvolvimento com padrões conhecidos</h3><p>Contatos Seguros reaproveita o bottom sheet e a tag CPF / CNPJ / celular do cadastro de chaves Pix. Partir de componentes que já estavam em código reduziu o esforço de desenvolvimento num prazo fixo e manteve os padrões consistentes em todo o Pix. Os únicos componentes novos foram os cards de limite diurno/noturno e suas variações, que refinei em várias rodadas de feedback e documentei com o time de desenvolvimento.</p><p>Seja por CPF, CNPJ, celular, e-mail, chave aleatória ou uma transferência anterior, o fluxo usa um campo único e os mesmos estados de erro: chave não encontrada, limite de tentativas, conta própria, já cadastrado.</p><p>Reaproveitar teve um custo. No seletor “Qual dado você quer usar?”, entre CPF e celular, explorei uma versão com switch e outra de múltipla escolha, mas mantivemos o componente existente para economizar desenvolvimento. E nem tudo o que já existia podia ficar: a versão anterior, feita pelo nosso time da Argentina, tratava todo CNPJ como contato seguro e mostrava uma tela dizendo isso. Com o novo fluxo e seus novos caminhos, essa regra deixou de fazer sentido, então a removemos.</p></div><figure><img src="sc-d3.jpg" alt="Cards de limite diurno e noturno nas suas variações, com notas de quando cada um aparece" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
 </section>
 <section class="cols reveal">
 <div class="prose"><h2>Resultado</h2><p>Entregamos dentro do prazo regulatório, e o trabalho foi validado pela liderança de pagamentos e money rails. Os dados de impacto são confidenciais.</p></div>

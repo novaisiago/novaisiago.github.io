@@ -17,31 +17,32 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
 <a id="top"></a>
-<header class="top">
-  <p class="intro"><a href="index.html">Iago Novais is a product designer for fintech, based in São Paulo. <br>Designed Open Finance and Pix journeys at Mercado Pago, <br>recognized 4× at the Open Summit Awards 2022.</a></p>
+<header class="top inner">
+  <p class="intro"><a href="index.html">Iago Novais</a></p>
   <div class="menu-spacer"></div>
 </header>
 <nav class="menu" aria-label="Main">
   <a href="index.html" aria-current="page">Work</a>
   <a href="about.html">About</a>
+  <a href="Iago-Novais-Resume.pdf" target="_blank" rel="noopener">Resume</a>
   <a href="https://www.linkedin.com/in/iagonovais/" target="_blank" rel="noopener">LinkedIn</a>
-  <a href="mailto:iago.novais5@gmail.com">Email</a>
+  <a href="mailto:iago.novais5@gmail.com">Email me</a>
 </nav>
 
 <main class="case">
-<h1>Pix Area on Desktop</h1>
-<p class="subtitle">Bringing transfers, Pix keys and refund tracking to Mercado Pago’s desktop web, for people who manage their account from a computer.</p>
+<div class="head"><h1>Pix Area on Desktop</h1>
+<p class="subtitle">Bringing transfers, Pix keys and refund tracking to Mercado Pago’s desktop web, for people who manage their account from a computer.</p></div>
 <div class="meta"><div><span class="label">Role</span><p>Product Designer</p></div><div><span class="label">Team</span><p>Design lead, UX writer, PM, engineering</p></div><div><span class="label">Platform</span><p>Web (desktop and mobile web) · Individuals and sellers</p></div><div><span class="label">Timeline</span><p>Shipped Q4 2023</p></div></div>
-<figure class="hero reveal"><img src="pd-hero.jpg" alt="The Pix area on Mercado Pago’s desktop web, with transfers and registered keys" width="1440" height="900" loading="eager" decoding="async"></figure>
+<figure class="hero reveal"><img src="pd-hero.jpg" alt="The Pix area on Mercado Pago’s desktop web, with transfers and registered keys" width="2880" height="2160" loading="eager" decoding="async"></figure>
 <div class="stats reveal" style="--n:4"><div><b>4</b><p>Page states the Pix area adapts to</p></div><div><b>5</b><p>Refund-request scenarios mapped across 2 moments</p></div><div><b>2</b><p>Audiences, each with its own first-time experience</p></div><div><b>4</b><p>Original illustrations I created for the first-time experience</p></div></div>
 <section class="cols reveal">
-<div class="prose"><h2>Summary</h2><p>Pix was first built for the phone. On desktop, Mercado Pago users could do only part of what the app offered, and sellers, who run their business from a computer, felt it most. I designed the Pix area for the web: registering and managing Pix keys, starting transfers, and following refund requests, in a page that adapts to each user’s situation.</p><p>I was the product designer, working with a UX writer and our design lead, alongside product and engineering. I also illustrated the first-time experience.</p></div>
-<div class="prose"><h2>Context &amp; challenge</h2><p>Team research with Pix users showed that many newcomers confused basic concepts, didn’t understand key portability and couldn’t remember which keys they had registered. Desktop users also told us the experience felt inconsistent with the app and that they couldn’t do everything in one place.</p><p>Simply adapting screens wouldn’t work: the same page had to make sense for someone with no Pix key, someone moving a key from another bank (portability) and someone waiting on a refund request, for both individuals and sellers. On top of that, most components had been built for mobile, so we had to rethink how they would behave on the web.</p></div>
+<div class="prose"><h2>Summary</h2><p>Pix was first built for the phone. On desktop, Mercado Pago users could do only part of what the app offered, and sellers, who run their business from a computer, felt it most. I designed the Pix area for the web: registering and managing Pix keys, starting transfers, and following refund requests, in a page that adapts to each user’s situation.</p><p>I was the product designer, working with a UX writer and our design lead, alongside product and engineering. I also adapted the Pix key registration and portability flows for the web, which depended on this area to exist, and illustrated the first-time experience.</p></div>
+<div class="prose"><h2>Context &amp; challenge</h2><p>Team research with Pix users showed that many newcomers confused basic concepts, didn’t understand key portability and couldn’t remember which keys they had registered. Desktop users also told us the experience felt inconsistent with the app and that they couldn’t do everything in one place.</p><p>Simply adapting screens wouldn’t work: the same page had to make sense for someone with no Pix key, someone moving a key from another bank (portability) and someone waiting on a refund request, for both individuals and sellers. On top of that, most components had been built for mobile, so we had to rethink how they would behave on the web: bottom sheets, for example, became modals.</p></div>
 </section>
 <div class="ticker" aria-hidden="true"><div class="track"><span>Fazer Pix → Transfer → Review → Done → </span><span>Minhas chaves → No key → Register CPF, CNPJ or phone → Portability in &amp; out → </span><span>MedPix → Refund requested → In analysis → Completed → </span><span>Fazer Pix → Transfer → Review → Done → </span><span>Minhas chaves → No key → Register CPF, CNPJ or phone → Portability in &amp; out → </span><span>MedPix → Refund requested → In analysis → Completed → </span></div></div>
 <section><h2>Process</h2><div class="steps reveal">
@@ -53,9 +54,9 @@
 <figure class="figure reveal"><img src="pd-process.jpg" alt="Happy path for individuals, from the home to key registration and transfers on web" width="2400" height="881" loading="lazy" decoding="async"></figure>
 </section>
 <section><h2>Key decisions</h2>
-<div class="decision reveal"><div class="text"><h3>01 — What needs resolving comes first</h3><p>The page reorders itself based on the user’s state: no keys registered, with or without a portability request, registered keys, or keys with portability in progress. Refund requests under MED, the Central Bank’s refund mechanism for Pix fraud, take priority over key registration.</p></div><figure><img src="pd-d1.jpg" alt="Key cards in different states: no key, portability pending, registered keys" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
-<div class="decision reveal"><div class="text"><h3>02 — Two audiences, two funnels</h3><p>Individuals and sellers share the same flow, but they come for different reasons. Individuals are invited to use their CPF and phone as keys to pay faster; sellers, their CNPJ and phone to start receiving. With the UX writer, I designed a first-time modal for each profile, with and without registered keys, and I created the four illustrations that carry each message.</p></div><figure><img src="pd-d2.jpg" alt="Four first-time modals for individuals and sellers, with and without keys" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
-<div class="decision reveal"><div class="text"><h3>03 — One message at a time</h3><p>A user can have several refund requests and portabilities open at once, and stacking every alert would bury what matters. We shipped a minimum version first and defined the full display rules as the next step: one message at a time, prioritized by status, which the user can dismiss.</p></div><figure><img src="pd-d3.jpg" alt="Refund-request and portability messages compared" width="1600" height="584" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>01 — What needs resolving comes first</h3><p>The page reorders itself based on the user’s state: no keys registered, with or without a portability request, registered keys, or keys with portability in progress. Refund requests under MED, the Central Bank’s refund mechanism for Pix fraud, take priority over key registration.</p></div><figure><img src="pd-d1.jpg" alt="Key cards in different states: no key, portability pending, registered keys" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>02 — Two audiences, two funnels</h3><p>Individuals and sellers share the same flow, but they come for different reasons. Individuals are invited to use their CPF and phone as keys to pay faster; sellers, their CNPJ and phone to start receiving. With the UX writer, I designed a first-time modal for each profile, with and without registered keys, and I created the four illustrations that carry each message.</p><p>I was the team’s go-to person for illustration and visual design, so drawing and designing flows often happened in the same project. I see illustration the way I see UI and UX writing: as context for the flow. It makes what we’re asking of people clearer, and gives the experience a more human, approachable tone.</p></div><figure><img src="pd-d2.jpg" alt="Four first-time modals for individuals and sellers, with and without keys" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>03 — One message at a time</h3><p>A user can have several refund requests and portabilities open at once, and stacking every alert would bury what matters. We shipped a minimum version first and defined the full display rules as the next step: one message at a time, prioritized by status, which the user can dismiss.</p></div><figure><img src="pd-d3.jpg" alt="Refund-request and portability messages compared" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
 </section>
 <section class="cols reveal">
 <div class="prose"><h2>Outcome</h2><p>The Pix area shipped on web in Q4 2023, and the team later expanded it with Pix Copia e Cola. I no longer have access to post-launch data.</p></div>
