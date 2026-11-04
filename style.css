@@ -380,7 +380,6 @@ footer.home { display: flex; }
 /* vertical infinite scroll for process boards */
 .vmarquee { height: 34rem; overflow: hidden; position: relative; }
 .vmarquee .vtrack { animation: vscroll 60s linear infinite; }
-.vmarquee:hover .vtrack { animation-play-state: paused; }
 @keyframes vscroll { to { transform: translateY(-50%); } }
 @media (max-width: 760px) { .vmarquee { height: 22rem; } }
 @media (prefers-reduced-motion: reduce) { .vmarquee .vtrack { animation: none; } }
@@ -436,3 +435,14 @@ footer.home { display: flex; }
 @media (max-width: 400px) { .menu { gap: 0.15rem; } .menu a { padding: 0.3em 0.5em; } }
 .menu a { white-space: nowrap; }
 @media (max-width: 380px) { .menu { font-size: 0.72rem; } .menu a { padding: 0.3em 0.45em; } }
+
+/* ---------- v10 ---------- */
+/* wide process boards: endless sideways scroll, never pauses */
+.hmarquee { height: 34rem; overflow: hidden; position: relative; background: var(--panel); }
+.hmarquee .htrack { display: flex; height: 100%; width: max-content; animation: hscroll calc(var(--ar, 2) * 30s) linear infinite; }
+.hmarquee .htrack img { height: 100%; width: auto; max-width: none; flex: none; }
+@keyframes hscroll { to { transform: translateX(-33.3333%); } }
+@media (max-width: 760px) { .hmarquee { height: 22rem; } }
+@media (prefers-reduced-motion: reduce) { .hmarquee .htrack { animation: none; } }
+/* hover text starts on the same line as the card title below */
+.card .over { padding: 1.25rem max(1.5rem, calc(100% - 32rem)) 1.25rem 0; }
