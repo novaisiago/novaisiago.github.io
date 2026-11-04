@@ -446,3 +446,10 @@ footer.home { display: flex; }
 @media (prefers-reduced-motion: reduce) { .hmarquee .htrack { animation: none; } }
 /* hover text starts on the same line as the card title below */
 .card .over { padding: 1.25rem max(1.5rem, calc(100% - 32rem)) 1.25rem 0; }
+/* hover: blur the image itself and scale it past the frame, so no hard edge shows */
+.card .thumb { overflow: hidden; }
+.card .over { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(255, 255, 255, 0.55); }
+.card .thumb img { transition: transform .5s ease, filter .35s ease; }
+@media (hover: hover) and (min-width: 761px) {
+	.card:hover .thumb img, .card:focus-visible .thumb img { filter: blur(22px) saturate(1.1); transform: scale(1.15); }
+}
