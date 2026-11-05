@@ -511,3 +511,10 @@ footer.home { display: flex; }
 	.steps { grid-template-columns: 1fr; gap: 1.1rem; }
 	.steps p { max-width: 34em; }
 }
+
+/* ---------- v16 ---------- */
+/* arriving by swipe: blocks only fade in, so the page moves purely sideways (no rise = no diagonal) */
+html.swipe-in-next .reveal, html.swipe-in-prev .reveal, html.swipe-go .reveal {
+	transform: none;
+	transition: opacity .3s ease;
+}
