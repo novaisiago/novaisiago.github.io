@@ -453,3 +453,33 @@ footer.home { display: flex; }
 @media (hover: hover) and (min-width: 761px) {
 	.card:hover .thumb img, .card:focus-visible .thumb img { filter: blur(22px) saturate(1.1); transform: scale(1.15); }
 }
+
+/* ---------- v13 ---------- */
+/* hover: the blur spills past the frame and fades into the page, no hard edge */
+@media (hover: hover) and (min-width: 761px) {
+	.card .thumb { transition: background .35s ease; }
+	.card:hover .thumb, .card:focus-visible .thumb { overflow: visible; background: transparent; }
+	.card:hover .thumb img, .card:focus-visible .thumb img { filter: blur(32px); opacity: 0.5; transform: none; }
+	.card .over { background: transparent; }
+	.card .thumb img { transition: filter .35s ease, opacity .35s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+}
+/* mobile: "say hi" leaves the top menu and sits bottom-left, mirroring the language switch */
+.say { display: none; }
+@media (max-width: 760px) {
+	.menu .mail { display: none; }
+	.say {
+		display: block;
+		position: fixed;
+		left: var(--pad);
+		bottom: var(--pad);
+		z-index: 50;
+		font-size: 0.8rem;
+		font-weight: 500;
+		background: rgba(255, 255, 255, 0.82);
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		border: 1px solid var(--line);
+		padding: 0.32em 0.8em;
+		border-radius: 999px;
+	}
+}
