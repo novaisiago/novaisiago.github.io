@@ -483,3 +483,31 @@ footer.home { display: flex; }
 		border-radius: 999px;
 	}
 }
+
+/* ---------- v14: mobile swipe between pages ---------- */
+@media (max-width: 760px) {
+	header.top, main, footer { transition: transform .18s ease-in, opacity .18s ease-in; }
+	.swipe-out-next header.top, .swipe-out-next main, .swipe-out-next footer { transform: translateX(-14%); opacity: 0; }
+	.swipe-out-prev header.top, .swipe-out-prev main, .swipe-out-prev footer { transform: translateX(14%); opacity: 0; }
+	.swipe-in-next header.top, .swipe-in-next main, .swipe-in-next footer { transform: translateX(14%); opacity: 0; transition: none; }
+	.swipe-in-prev header.top, .swipe-in-prev main, .swipe-in-prev footer { transform: translateX(-14%); opacity: 0; transition: none; }
+	.swipe-go header.top, .swipe-go main, .swipe-go footer { transform: none; opacity: 1; transition: transform .32s cubic-bezier(.2,.7,.2,1), opacity .32s ease-out; }
+}
+@media (prefers-reduced-motion: reduce) {
+	header.top, main, footer { transition: none !important; transform: none !important; }
+}
+
+/* ---------- v15 ---------- */
+/* previous / next project in a lighter link blue */
+.next a { color: #1a73e8; }
+.next a:hover { color: #1558b0; }
+.next small { color: var(--ink-faint); }
+@media (max-width: 760px) {
+	/* body copy a step below the section titles */
+	.prose p, .decision p { font-size: 0.9375rem; }
+	.subtitle { font-size: 0.98rem; }
+	.stats p, .meta, .steps p, .jobs span { font-size: 0.875rem; }
+	/* process: one step per row, so the text isn't squeezed into two columns */
+	.steps { grid-template-columns: 1fr; gap: 1.1rem; }
+	.steps p { max-width: 34em; }
+}

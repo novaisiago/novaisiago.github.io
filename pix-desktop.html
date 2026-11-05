@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.classList.add('js')</script>
+<script>document.documentElement.classList.add('js');try{var s=sessionStorage.getItem('swipe');if(s&&matchMedia('(max-width: 760px)').matches)document.documentElement.classList.add('swipe-in-'+s)}catch(e){}</script>
 <title>Pix Area on Desktop — Iago Novais</title>
 <meta name="description" content="Bringing transfers, Pix keys and refund tracking to Mercado Pago’s desktop web, for people who manage their account from a computer.">
 <meta property="og:title" content="Pix Area on Desktop — Iago Novais">
@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
@@ -40,15 +40,15 @@
 <p class="subtitle">Bringing transfers, Pix keys and refund tracking to Mercado Pago’s desktop web, for people who manage their account from a computer.</p></div>
 <div class="meta"><div><span class="label">Role</span><p>Product Designer</p></div><div><span class="label">Team</span><p>Design lead, UX writer, PM, engineering</p></div><div><span class="label">Platform</span><p>Desktop web · Individuals and sellers</p></div><div><span class="label">Timeline</span><p>Shipped Q4 2023</p></div></div>
 <figure class="hero reveal"><img src="pd-hero.jpg" alt="The Pix area on Mercado Pago’s desktop web, with transfers and registered keys" width="2880" height="2160" loading="eager" decoding="async"></figure>
-<div class="stats reveal" style="--n:4"><div><b>4</b><p>Page states the Pix area adapts to</p></div><div><b>5</b><p>Refund-request scenarios mapped across 2 moments</p></div><div><b>2</b><p>Audiences, each with its own first-time experience</p></div><div><b>4</b><p>Original illustrations I created for the first-time experience</p></div></div>
+<div class="stats reveal" style="--n:4"><div><b>4</b><p>Page states the Pix area adapts to</p></div><div><b>5</b><p>Refund-request scenarios mapped across 2 moments</p></div><div><b>2</b><p>Audiences, each with its own FTU</p></div><div><b>4</b><p>Original illustrations I created for the FTU</p></div></div>
 <section class="cols reveal">
-<div class="prose"><h2>Summary</h2><p>On desktop, Mercado Pago users had a Pix experience that depended on the app, which hurt sellers who ran their business from a computer. In this project, I designed the Pix area for the web, with Pix key registration and management, transfers and refund-request tracking.</p><p>I also adapted the Pix key registration and portability flows for the web, which depended on this area to exist, and illustrated the first-time experience.</p></div>
+<div class="prose"><h2>Summary</h2><p>On desktop, Mercado Pago users had a Pix experience that depended on the app, which hurt sellers who ran their business from a computer. In this project, I designed the Pix area for the web, with Pix key registration and management, transfers and refund-request tracking.</p><p>I also adapted the Pix key registration and portability flows for the web, which depended on this area to exist, and illustrated the first-time use (FTU) screens.</p></div>
 <div class="prose"><h2>Context &amp; challenge</h2><p>A study by our research team on Pix showed that many users confused basic concepts, didn’t understand how key portability worked and couldn’t remember which keys they had registered. We also saw complaints that the experience was inconsistent with the app and that people couldn’t do everything in one place.</p><p>The same page had to make sense for someone with no Pix key, someone moving a key from another bank (portability) and someone waiting on a refund request, for both individuals and sellers. On top of that, some components had been designed for mobile, so we had to rethink how they would behave on the web.</p></div>
 </section>
 <div class="ticker" aria-hidden="true"><div class="track"><span>Fazer Pix → Transfer → Review → Done → </span><span>Minhas chaves → No key → Register CPF, CNPJ or phone → Portability in &amp; out → </span><span>MedPix → Refund requested → In analysis → Completed → </span><span>Fazer Pix → Transfer → Review → Done → </span><span>Minhas chaves → No key → Register CPF, CNPJ or phone → Portability in &amp; out → </span><span>MedPix → Refund requested → In analysis → Completed → </span></div></div>
 <section><h2>Process</h2><div class="steps reveal">
 <div><span class="n">01</span><h3>Internal benchmark</h3><p>Used the mobile experience as a reference and decided what to keep, adapt or drop, preserving as much of the original experience as possible within the technical limits of the web.</p></div>
-<div><span class="n">02</span><h3>Map the paths</h3><p>Mapped happy paths for individuals and sellers, plus error states, before drawing screens.</p></div>
+<div><span class="n">02</span><h3>Map the paths</h3><p>Mapped the flows for individuals and sellers, considering the different error and success states, before drawing screens.</p></div>
 <div><span class="n">03</span><h3>Document every state</h3><p>Documented every key use case (no key, with key, portability in and out, multiple portabilities) and the MedPix display rules.</p></div>
 <div><span class="n">04</span><h3>Review before handoff</h3><p>Feedback rounds with the team, design system specialists, product and engineering.</p></div>
 </div>
@@ -56,11 +56,11 @@
 </section>
 <section><h2>Key decisions</h2>
 <div class="decision reveal"><div class="text"><h3>01 — Prioritizing use cases</h3><p>We prioritized the states of users’ keys: no keys registered, with or without a portability request, registered keys, or keys with portability in progress. Refund requests under MED, the Central Bank’s refund mechanism for Pix fraud, take priority over key registration.</p></div><figure><img src="pd-d1.jpg" alt="Key cards in different states: no key, portability pending, registered keys" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
-<div class="decision reveal"><div class="text"><h3>02 — Different flows for each audience</h3><p>Individuals and sellers share the same flow, but they come for different reasons. Individuals are invited to use their CPF and phone as keys to pay faster; sellers, their CNPJ and phone to start receiving. With the UX writer, I designed a first-time modal for each profile, with and without registered keys, and I created the four illustrations that carry each message.</p><p>As the team’s go-to person for illustration and visual design, I often drew and designed flows in the same project. I see illustration as context for the flow, making clearer what we’re asking of people and giving the experience a more human tone.</p></div><figure><img src="pd-d2.jpg" alt="Four first-time modals for individuals and sellers, with and without keys" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>02 — Different flows for each audience</h3><p>Individuals and sellers share the same flow, but they come for different reasons. Individuals are invited to use their CPF and phone as keys to pay faster, and sellers their CNPJ and phone to start receiving. With the UX writer, I designed a first-time use (FTU) modal for each profile, with and without registered keys, and I created the four illustrations that carry each message.</p><p>As the team’s go-to person for illustration and visual design, I often drew and designed flows in the same project. I see illustration as context for the flow, making clearer what we’re asking of people and giving the experience a more human tone.</p></div><figure><img src="pd-d2.jpg" alt="Four FTU modals for individuals and sellers, with and without keys" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
 <div class="decision reveal"><div class="text"><h3>03 — Display rules</h3><p>A user can have several refund requests and portabilities open at once, and stacking every alert would bury what matters. We shipped a minimum version first and defined the full display rules as the next step, with one message at a time, prioritized by status.</p></div><figure><img src="pd-d3.jpg" alt="Refund-request and portability messages compared" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
 </section>
 <section class="cols reveal">
-<div class="prose"><h2>Outcome</h2><p>The Pix area shipped on web in Q4 2023, and the team later expanded it with Pix Copia e Cola. I no longer have access to post-launch data.</p></div>
+<div class="prose"><h2>Outcome</h2><p>The Pix area shipped on web on the planned deadline, and the team later expanded it with Pix Copia e Cola. I no longer have access to post-launch data.</p></div>
 <div class="prose"><h2>What I’d do differently</h2><p>Keep the post-launch data. I lost access to it, so I can’t show the real impact this flow had.</p></div>
 </section>
 <p class="thanks reveal">Thanks to Thiago, Thaci and Andreza.</p>
@@ -74,6 +74,6 @@
   <a href="pix-desktop-pt.html" hreflang="pt-BR" lang="pt-BR">PT-BR</a>
   <a href="pix-desktop.html" hreflang="en" lang="en" aria-current="true">EN</a>
 </nav>
-<script src="script.js?v=5"></script>
+<script src="script.js?v=6"></script>
 </body>
 </html>

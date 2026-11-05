@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.classList.add('js')</script>
+<script>document.documentElement.classList.add('js');try{var s=sessionStorage.getItem('swipe');if(s&&matchMedia('(max-width: 760px)').matches)document.documentElement.classList.add('swipe-in-'+s)}catch(e){}</script>
 <title>Controles de segurança Pix — Iago Novais</title>
-<meta name="description" content="O projeto de Meus Limites e Contatos Seguros para milhões de pessoas que usam Pix,com prazo definido pelo Banco Central.">
+<meta name="description" content="O projeto de Meus Limites e Contatos Seguros para milhões de pessoas que usam Pix, com prazo e funcionalidades definidas pelo Banco Central.">
 <meta property="og:title" content="Controles de segurança Pix — Iago Novais">
-<meta property="og:description" content="O projeto de Meus Limites e Contatos Seguros para milhões de pessoas que usam Pix,com prazo definido pelo Banco Central.">
+<meta property="og:description" content="O projeto de Meus Limites e Contatos Seguros para milhões de pessoas que usam Pix, com prazo e funcionalidades definidas pelo Banco Central.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#ffffff">
@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
@@ -37,13 +37,13 @@
 
 <main class="case">
 <div class="head"><h1>Controles de segurança Pix</h1>
-<p class="subtitle">O projeto de Meus Limites e Contatos Seguros para milhões de pessoas que usam Pix, com prazo definido pelo Banco Central.</p></div>
-<div class="meta"><div><span class="label">Cargo</span><p>Product Designer</p></div><div><span class="label">Time</span><p>UX lead, 2 product designers, 2 UX writers, PM, desenvolvimento, jurídico</p></div><div><span class="label">Plataforma</span><p>iOS e Android · Contas de pessoa física e jurídica</p></div><div><span class="label">Período</span><p>2023–2024</p></div></div>
+<p class="subtitle">O projeto de Meus Limites e Contatos Seguros para milhões de pessoas que usam Pix, com prazo e funcionalidades definidas pelo Banco Central.</p></div>
+<div class="meta"><div><span class="label">Cargo</span><p>Product Designer</p></div><div><span class="label">Time</span><p>UX lead, 2 product designers, 2 UX writers, PM, desenvolvimento, jurídico</p></div><div><span class="label">Plataforma</span><p>iOS e Android · Contas de pessoa física e jurídica</p></div><div><span class="label">Período</span><p>2023⁠–⁠2024</p></div></div>
 <figure class="hero reveal"><img src="sc-hero.jpg" alt="Pessoa num caixa eletrônico segurando um celular com a confirmação de aumento de limite" width="1440" height="900" loading="eager" decoding="async"></figure>
-<div class="stats reveal" style="--n:4"><div><b>6</b><p>Formas de cadastrar um contato seguro, num fluxo único</p></div><div><b>5 + 1</b><p>Fluxos de ajuste de limite, mais a troca de período diurno/noturno</p></div><div><b>24 h ou na hora</b><p>Aumentar um limite leva até 24 h; diminuir é imediato</p></div><div><b>1 trimestre</b><p>Da nova regulação ao lançamento</p></div></div>
+<div class="stats reveal" style="--n:4"><div><b>6</b><p>Formas de cadastrar um contato seguro, num fluxo único</p></div><div><b>5 + 1</b><p>Fluxos de ajuste de limite, com troca de período diurno/noturno</p></div><div><b>24 h ou na hora</b><p>Aumentar um limite leva até 24 h; diminuir é imediato</p></div><div><b>1 trimestre</b><p>Da nova regulação ao lançamento</p></div></div>
 <section class="cols reveal">
-<div class="prose"><h2>Resumo</h2><p>Em 2023, o Banco Central exigiu que todo app de pagamento permitisse definir limites de Pix e gerenciar contatos de confiança. No Mercado Pago, projetei os fluxos de Meus Limites e Contatos Seguros, equilibrando segurança com a fricção dos pagamentos do dia a dia.</p><p>Depois de entregar e iterar os fluxos de Open Finance, as prioridades da companhia moveram para Pix, área que tinha maior rotatividade de dinheiro no aplicativo. Nesse ano movi para o Squad de Pix, e com a equipe nesse projeto, projetei a arquitetura de navegação, os fluxos e o handoff de Meus Limites, limites por período e Contatos Seguros, para pessoa física e jurídica. Também, desenhei os novos cards de limite e suas casuísticas de telas de feedback e notificações.</p></div>
-<div class="prose"><h2>Contexto e desafio</h2><p>O Pix é o sistema de pagamentos instantâneos do Brasil, regulado pelo Banco Central. A versão 6.4 do Manual de Experiência do Pix exigia funcionalidades que o app não tinha: contatos de confiança, limites diurno e noturno e pedidos de aumento de limite para Pix Saque e Pix Troco.</p><p>Tendo o manual do Banco Central como guia de quais funcionalidades eram necessárias, e em qual prazo, explorei maneiras de entregar uma experiência funcional e pouco friccionante na estrutura do menu, na maneira de explicar os limites, mostrar os estados de erro e as notificações.</p></div>
+<div class="prose"><h2>Resumo</h2><p>Em 2023, o Banco Central exigiu que todo app de pagamento permitisse definir limites de transferências Pix e gerenciar contatos de confiança. No Mercado Pago, projetei os fluxos de Meus Limites e Contatos Seguros, equilibrando segurança com a fricção dos pagamentos do dia a dia.</p><p>Depois de entregar e iterar os fluxos de Open Finance, as prioridades da companhia moveram para Pix, área que tinha maior rotatividade de dinheiro no aplicativo. Nesse ano movi para o Squad de Pix, e com a equipe nesse projeto, projetei a arquitetura de navegação, os fluxos e o handoff de Meus Limites, limites por período e Contatos Seguros, para pessoa física e jurídica. Também, desenhei os novos cards de limite e suas casuísticas de telas de feedback e notificações.</p></div>
+<div class="prose"><h2>Contexto e desafio</h2><p>O Pix é o sistema de pagamentos instantâneos do Brasil, regulado pelo Banco Central. A versão 6.4 do Manual de Experiência do Pix exigia funcionalidades que o app não tinha: contatos de confiança, limites diurno e noturno e pedidos de aumento de limite para Pix Saque e Pix Troco.</p><p>Tendo o manual do Banco Central como guia de quais funcionalidades eram necessárias e em qual prazo, explorei maneiras de entregar uma experiência funcional e pouco friccionante para a pessoa usuária.</p></div>
 </section>
 <div class="ticker" aria-hidden="true"><div class="track"><span>Meus limites → Transferências → Saques → Período das transações → Contatos seguros → </span><span>Aumento → Novo valor → Confirmar → Face ID → Até 24 h → Notificação push → </span><span>Contatos seguros → CPF · CNPJ · Celular · E-mail · Chave aleatória · Transferência anterior → </span><span>Meus limites → Transferências → Saques → Período das transações → Contatos seguros → </span><span>Aumento → Novo valor → Confirmar → Face ID → Até 24 h → Notificação push → </span><span>Contatos seguros → CPF · CNPJ · Celular · E-mail · Chave aleatória · Transferência anterior → </span></div></div>
 <section><h2>Processo</h2><div class="steps reveal">
@@ -63,7 +63,7 @@
 <div class="prose"><h2>Resultado</h2><p>Entregamos dentro do prazo regulatório, e o trabalho foi validado pela liderança de pagamentos e money rails. Os dados de impacto são confidenciais.</p></div>
 <div class="prose"><h2>O que aprendi</h2><p>Um prazo regulatório às vezes significa fazer o melhor possível com o tempo e os recursos que se tem. Exige jogo de cintura. O fluxo se sustentou bem depois do lançamento, e foi também um dos meus projetos mais ponta a ponta: da publicação do manual ao lançamento e ao acompanhamento dos dados, levando atualizações semanais para o time e trabalhando os feedbacks.</p></div>
 </section>
-<p class="thanks reveal">Um agradecimento especial a Thiago, Mara, Cadu e Mel.</p>
+<p class="thanks reveal">Um agradecimento especial a Thiago, Mara, Cadu, Danilo e Mel.</p>
 <nav class="next"><a href="open-finance-pt.html"><small>Anterior</small>← Jornadas de consentimento Open Finance</a><a class="to" href="pix-desktop-pt.html"><small>Próximo projeto</small>Área Pix no desktop →</a></nav>
 </main>
 <footer class="inner">
@@ -74,6 +74,6 @@
   <a href="pix-security-controls-pt.html" hreflang="pt-BR" lang="pt-BR" aria-current="true">PT-BR</a>
   <a href="pix-security-controls.html" hreflang="en" lang="en">EN</a>
 </nav>
-<script src="script.js?v=5"></script>
+<script src="script.js?v=6"></script>
 </body>
 </html>

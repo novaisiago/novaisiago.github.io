@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.classList.add('js')</script>
+<script>document.documentElement.classList.add('js');try{var s=sessionStorage.getItem('swipe');if(s&&matchMedia('(max-width: 760px)').matches)document.documentElement.classList.add('swipe-in-'+s)}catch(e){}</script>
 <title>Open Finance Consent Journeys — Iago Novais</title>
-<meta name="description" content="Designing some of Brazil’s first data-sharing consent flows, for a concept users had never seen before.">
+<meta name="description" content="Some of Brazil’s first data-sharing flows, for an entirely new feature.">
 <meta property="og:title" content="Open Finance Consent Journeys — Iago Novais">
-<meta property="og:description" content="Designing some of Brazil’s first data-sharing consent flows, for a concept users had never seen before.">
+<meta property="og:description" content="Some of Brazil’s first data-sharing flows, for an entirely new feature.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#ffffff">
@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
@@ -37,18 +37,18 @@
 
 <main class="case">
 <div class="head"><h1>Open Finance Consent Journeys</h1>
-<p class="subtitle">Designing some of Brazil’s first data-sharing consent flows, for a concept users had never seen before.</p></div>
-<div class="meta"><div><span class="label">Role</span><p>Product Designer</p></div><div><span class="label">Team</span><p>Lead designer, 2 product designers, UX writer, PM, engineering, legal</p></div><div><span class="label">Platform</span><p>iOS &amp; Android</p></div><div><span class="label">Timeline</span><p>2021–2022</p></div></div>
+<p class="subtitle">Some of Brazil’s first data-sharing flows, for an entirely new feature.</p></div>
+<div class="meta"><div><span class="label">Role</span><p>Product Designer</p></div><div><span class="label">Team</span><p>Lead designer, 2 product designers, UX writer, PM, engineering, legal</p></div><div><span class="label">Platform</span><p>iOS &amp; Android</p></div><div><span class="label">Timeline</span><p>2021⁠–⁠2022</p></div></div>
 <figure class="hero reveal"><img src="of-hero.jpg" alt="Two Open Finance screens: choosing the source bank and reviewing the consent" width="2880" height="1800" loading="eager" decoding="async"></figure>
-<div class="stats reveal" style="--n:4"><div><b>4×</b><p>Open Summit Awards 2022 recognitions, including 2nd place for Case of the Year</p></div><div><b>2</b><p>Journeys: bringing data in and sharing data out</p></div><div><b>44%</b><p>Of Brazilians didn’t know what Open Finance was, per a Mercado Pago survey</p></div><div><b>~1M</b><p>Mercado Pago clients sharing data via Open Finance by early 2023</p></div></div>
+<div class="stats reveal" style="--n:4"><div><b>4×</b><p>Open Summit Awards 2022 recognitions, including 2nd place for Case of the Year</p></div><div><b>2</b><p>Journeys: bringing data in and sharing data out</p></div><div><b>44%</b><p>Of Brazilians didn’t know what Open Finance was, per a Mercado Pago survey</p></div><div><b>~1M</b><p>Mercado Pago clients sharing data via Open Finance by early 2023</p></div></div>
 <section class="cols reveal">
-<div class="prose"><h2>Summary</h2><p>I joined the Open Finance team at Mercado Pago, Mercado Livre’s fintech, to design the consent and data-sharing journeys, among the first in Brazil under the new Central Bank rules: how people bring their data from other banks into the app, and how they share Mercado Pago data with other institutions.</p><p>I designed the data-in and data-out journeys together with the design team, alongside product, engineering and legal.</p></div>
-<div class="prose"><h2>Context &amp; challenge</h2><p>Open Finance asks people to share sensitive financial data between institutions. The concept was new in Brazil and globally: a Mercado Pago survey found that 44% of Brazilians didn’t know what Open Finance was. On top of that, the Central Bank defined strict rules for every step. The flow had to be compliant, transparent and simple enough that people wouldn’t abandon it halfway.</p></div>
+<div class="prose"><h2>Summary</h2><p>I joined the Open Finance team at Mercado Pago, Mercado Livre’s fintech, to design the consent and data-sharing journeys, among the first in Brazil under the new Central Bank rules.</p><p>I designed the data-in and data-out journeys together with the design team, alongside product, engineering and legal.</p></div>
+<div class="prose"><h2>Context &amp; challenge</h2><p>Open Finance lets people share financial data between institutions. The concept was new in Brazil and globally: a Mercado Pago survey found that 44% of Brazilians didn’t know what Open Finance was. On top of that, the Central Bank defined strict rules for every step. The flow had to be compliant, transparent and simple enough that people wouldn’t abandon it halfway.</p></div>
 </section>
 <div class="ticker" aria-hidden="true"><div class="track"><span>Data-in → Home → Choose source bank → Data, purpose &amp; duration → Review &amp; confirm → Redirect → Bank login &amp; authorization → Data connected → </span><span>Data-out → Third-party app → Redirect → Login · biometrics → Who asks, data, purpose &amp; duration → Choose accounts → Authorize → Shared → </span><span>Data-in → Home → Choose source bank → Data, purpose &amp; duration → Review &amp; confirm → Redirect → Bank login &amp; authorization → Data connected → </span><span>Data-out → Third-party app → Redirect → Login · biometrics → Who asks, data, purpose &amp; duration → Choose accounts → Authorize → Shared → </span></div></div>
 <section><h2>Process</h2><div class="steps reveal">
-<div><span class="n">01</span><h3>Regulation into constraints</h3><p>Mapped what the Central Bank made mandatory and what was open to design.</p></div>
-<div><span class="n">02</span><h3>Explore and test</h3><p>Explored variations of the authorization steps and tested them in in-person usability sessions with the research team.</p></div>
+<div><span class="n">01</span><h3>Studying the regulation</h3><p>Mapped what the Central Bank made mandatory and what was open to design.</p></div>
+<div><span class="n">02</span><h3>Explorations and tests</h3><p>Explored variations of the authorization steps and tested them in in-person usability sessions with the research team.</p></div>
 <div><span class="n">03</span><h3>Plain language</h3><p>Our UX writer turned legal consent copy into plain language, without losing compliance.</p></div>
 <div><span class="n">04</span><h3>Review before handoff</h3><p>Reviewed every step back and forth with design colleagues and leadership, technical specialists, legal/compliance and engineering.</p></div>
 </div>
@@ -56,11 +56,11 @@
 </section>
 <section><h2>Key decisions</h2>
 <div class="decision reveal"><div class="text"><h3>01 — Showing where you are in the consent</h3><p>Before any action, users see what data is shared, with which institution and for how long. After launch, the metrics showed people dropping out halfway through the flow, so we designed the stepper. To keep people in the flow, the component makes clear which step they’re on.</p></div><figure><img src="of-d1.jpg" alt="Consent steps with a numbered stepper at the top" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
-<div class="decision reveal"><div class="text"><h3>02 — Putting the most-used banks first</h3><p>Choosing where to bring data from is the first step of the flow. At launch, it started with search and an alphabetical list of institutions. Once we had data on which banks people connected most, we checked with engineering whether a redesign of the list was feasible. The iteration brought the top 5 banks as shortcuts at the top, with search and the full list right below.</p></div><figure><img src="of-d2.jpg" alt="Bank selection with the most frequent institutions as shortcuts" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>02 — Putting the most-used banks first</h3><p>Choosing where to bring data from is the first step of the flow. At launch, it started with search and an alphabetical list of institutions. Once we had data on which banks people connected most, we checked with engineering whether a redesign of the list was feasible. As an iteration, I designed a shortcut with the top 5 banks at the top, with search and the full list right below.</p></div><figure><img src="of-d2.jpg" alt="Bank selection with the most frequent institutions as shortcuts" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
 <div class="decision reveal"><div class="text"><h3>03 — Visibility and control over consents</h3><p>Shared data lives in an easy-to-find menu. Each consent shows its status at a glance (active, expiring, expired or ended), so users can track, renew or revoke it at any time.</p></div><figure><img src="of-d3.jpg" alt="Consent cards showing expiring, expired and ended states" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
 </section>
 <section class="cols reveal">
-<div class="prose"><h2>Outcome</h2><p>The journeys launched with Brazil’s first wave of Open Finance and were <a class="inline" href="https://openfinanceawards.com.br/edicoes/1a-edicao" target="_blank" rel="noopener">recognized in 4 categories at the Open Summit Awards 2022</a>, including 2nd place for Case of the Year. By early 2023, around 1 million Mercado Pago clients had shared their data through Open Finance (company figures reported in the press).</p></div>
+<div class="prose"><h2>Outcome</h2><p>The journeys launched with Brazil’s first wave of Open Finance and were <a class="inline" href="https://openfinanceawards.com.br/edicoes/1a-edicao" target="_blank" rel="noopener">recognized in 4 categories at the Open Summit Awards 2022</a>, including 2nd place for Case of the Year. By early 2023, around 1 million Mercado Pago clients had shared their data through Open Finance (company figures reported in the press).</p></div>
 <div class="prose"><h2>What I learned</h2><p>Coming from Guiabolso, where the room to imagine felt endless and we were still creating and refining our ways of working, this was my first time designing inside a large company, within banking regulation. With more established processes and a defined scope, creativity moved somewhere else, making room for more critical thinking about what was real and feasible in product design.</p></div>
 </section>
 <p class="thanks reveal">Special thanks to Rodrigo, Cadu, Mara, Cinthia, Mel, Tamyres, João and the whole Open Finance squad.</p>
@@ -74,6 +74,6 @@
   <a href="open-finance-pt.html" hreflang="pt-BR" lang="pt-BR">PT-BR</a>
   <a href="open-finance.html" hreflang="en" lang="en" aria-current="true">EN</a>
 </nav>
-<script src="script.js?v=5"></script>
+<script src="script.js?v=6"></script>
 </body>
 </html>

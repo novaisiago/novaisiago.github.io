@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.classList.add('js')</script>
+<script>document.documentElement.classList.add('js');try{var s=sessionStorage.getItem('swipe');if(s&&matchMedia('(max-width: 760px)').matches)document.documentElement.classList.add('swipe-in-'+s)}catch(e){}</script>
 <title>Jornadas de consentimento Open Finance — Iago Novais</title>
-<meta name="description" content="O projeto de alguns dos primeiros fluxos de compartilhamento de dados do Brasil, para um conceito que as pessoas nunca tinham visto.">
+<meta name="description" content="Alguns dos primeiros fluxos de compartilhamento de dados do Brasil, para uma funcionalidade totalmente nova.">
 <meta property="og:title" content="Jornadas de consentimento Open Finance — Iago Novais">
-<meta property="og:description" content="O projeto de alguns dos primeiros fluxos de compartilhamento de dados do Brasil, para um conceito que as pessoas nunca tinham visto.">
+<meta property="og:description" content="Alguns dos primeiros fluxos de compartilhamento de dados do Brasil, para uma funcionalidade totalmente nova.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#ffffff">
@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
@@ -37,30 +37,30 @@
 
 <main class="case">
 <div class="head"><h1>Jornadas de consentimento Open Finance</h1>
-<p class="subtitle">O projeto de alguns dos primeiros fluxos de compartilhamento de dados do Brasil, para um conceito que as pessoas nunca tinham visto.</p></div>
-<div class="meta"><div><span class="label">Cargo</span><p>Product Designer</p></div><div><span class="label">Time</span><p>Lead designer, 2 product designers, UX writer, PM, desenvolvimento, jurídico</p></div><div><span class="label">Plataforma</span><p>iOS e Android</p></div><div><span class="label">Período</span><p>2021–2022</p></div></div>
+<p class="subtitle">Alguns dos primeiros fluxos de compartilhamento de dados do Brasil, para uma funcionalidade totalmente nova.</p></div>
+<div class="meta"><div><span class="label">Cargo</span><p>Product Designer</p></div><div><span class="label">Time</span><p>Lead designer, 2 product designers, UX writer, PM, desenvolvimento, jurídico</p></div><div><span class="label">Plataforma</span><p>iOS e Android</p></div><div><span class="label">Período</span><p>2021⁠–⁠2022</p></div></div>
 <figure class="hero reveal"><img src="of-hero.jpg" alt="Duas telas do Open Finance: escolha do banco de origem e revisão do consentimento" width="2880" height="1800" loading="eager" decoding="async"></figure>
-<div class="stats reveal" style="--n:4"><div><b>4×</b><p>Reconhecimentos no Open Summit Awards 2022, incluindo o 2º lugar em Case do Ano</p></div><div><b>2</b><p>Jornadas: trazer dados para o app e compartilhar dados com outras instituições</p></div><div><b>44%</b><p>Dos brasileiros não sabiam o que era Open Finance, segundo pesquisa do Mercado Pago</p></div><div><b>~1 mi</b><p>De clientes do Mercado Pago compartilhando dados via Open Finance no início de 2023</p></div></div>
+<div class="stats reveal" style="--n:4"><div><b>4×</b><p>Reconhecimentos no Open Summit Awards 2022, incluindo o 2º lugar em Case do Ano</p></div><div><b>2</b><p>Jornadas: trazer dados para o app e compartilhar dados com outras instituições</p></div><div><b>44%</b><p>Dos brasileiros não sabiam o que era Open Finance, segundo pesquisa do Mercado Pago</p></div><div><b>~1 mi</b><p>De clientes do Mercado Pago compartilhando dados via Open Finance no início de 2023</p></div></div>
 <section class="cols reveal">
-<div class="prose"><h2>Resumo</h2><p>Entrei no time de Open Finance do Mercado Pago, a fintech do Mercado Livre, para projetar as jornadas de consentimento e compartilhamento de dados, entre as primeiras do Brasil sob as novas regras do Banco Central: como as pessoas trazem seus dados de outros bancos para o app e como compartilham os dados do Mercado Pago com outras instituições.</p><p>Projetei as jornadas de data-in e data-out junto com o time de design, ao lado de produto, desenvolvimento e jurídico.</p></div>
-<div class="prose"><h2>Contexto e desafio</h2><p>O Open Finance pede que as pessoas compartilhem dados financeiros sensíveis entre instituições. O conceito era novo no Brasil e no mundo: uma pesquisa do Mercado Pago mostrou que 44% dos brasileiros não sabiam o que era Open Finance. Além disso, o Banco Central definiu regras rígidas para cada etapa. O fluxo precisava ser compatível com a regulação, transparente e simples o bastante para que as pessoas não desistissem no meio.</p></div>
+<div class="prose"><h2>Resumo</h2><p>Entrei no time de Open Finance do Mercado Pago, a fintech do Mercado Livre, para projetar as jornadas de consentimento e compartilhamento de dados, entre as primeiras do Brasil sob as novas regras do Banco Central.</p><p>Projetei as jornadas de data-in e data-out junto com o time de design, ao lado de produto, desenvolvimento e jurídico.</p></div>
+<div class="prose"><h2>Contexto e desafio</h2><p>O Open Finance permite que a pessoa usuária compartilhe dados financeiros entre instituições. O conceito era novo no Brasil e no mundo: uma pesquisa do Mercado Pago mostrou que 44% dos brasileiros não sabiam o que era Open Finance. Além disso, o Banco Central definiu regras rígidas para cada etapa. O fluxo precisava ser compatível com a regulação, transparente e simples o bastante para que as pessoas não desistissem no meio.</p></div>
 </section>
 <div class="ticker" aria-hidden="true"><div class="track"><span>Data-in → Home → Escolher o banco de origem → Dados, finalidade e prazo → Revisar e confirmar → Redirecionamento → Login e autorização no banco → Dados conectados → </span><span>Data-out → App de terceiro → Redirecionamento → Login · biometria → Quem pede, dados, finalidade e prazo → Escolher contas → Autorizar → Compartilhado → </span><span>Data-in → Home → Escolher o banco de origem → Dados, finalidade e prazo → Revisar e confirmar → Redirecionamento → Login e autorização no banco → Dados conectados → </span><span>Data-out → App de terceiro → Redirecionamento → Login · biometria → Quem pede, dados, finalidade e prazo → Escolher contas → Autorizar → Compartilhado → </span></div></div>
 <section><h2>Processo</h2><div class="steps reveal">
-<div><span class="n">01</span><h3>Regulação vira restrição</h3><p>Mapeei o que o Banco Central tornava obrigatório e o que estava aberto ao design.</p></div>
-<div><span class="n">02</span><h3>Explorar e testar</h3><p>Exploramos variações das etapas de autorização e testamos em sessões presenciais de usabilidade com o time de research.</p></div>
-<div><span class="n">03</span><h3>Linguagem simples</h3><p>Nosso UX writer transformou os textos jurídicos de consentimento em linguagem simples, sem perder a conformidade.</p></div>
+<div><span class="n">01</span><h3>Estudo da regulação</h3><p>Mapeei o que o Banco Central tornava obrigatório e o que estava aberto ao design.</p></div>
+<div><span class="n">02</span><h3>Explorações e testes</h3><p>Exploramos variações das etapas de autorização e testamos em sessões presenciais de usabilidade com o time de research.</p></div>
+<div><span class="n">03</span><h3>Linguagem simples</h3><p>Nossa UX writer transformou os textos jurídicos de consentimento em linguagem simples, sem perder a conformidade.</p></div>
 <div><span class="n">04</span><h3>Revisão antes do handoff</h3><p>Revisei cada etapa em várias rodadas com colegas de design e liderança, especialistas técnicos, jurídico/compliance e desenvolvimento.</p></div>
 </div>
 <div class="figure hmarquee reveal" role="img" aria-label="Board de entrega do fluxo de revisão e edição para trazer dados ao Mercado Pago" style="--ar:1.954"><div class="htrack"><img src="of-process.jpg" alt="" width="1909" height="977" loading="lazy"><img src="of-process.jpg" alt="" width="1909" height="977" loading="lazy"><img src="of-process.jpg" alt="" width="1909" height="977" loading="lazy"></div></div>
 </section>
 <section><h2>Decisões-chave</h2>
 <div class="decision reveal"><div class="text"><h3>01 — Mostrar em que etapa do consentimento você está</h3><p>Antes de qualquer ação, a pessoa usuária vê quais dados serão compartilhados, com qual instituição e por quanto tempo. Depois do lançamento as métricas mostraram abandono do fluxo no meio do caminho, e a partir disso desenhamos o Stepper. Como uma forma de manter a pessoa no fluxo, o componente deixa claro em que etapa ela está.</p></div><figure><img src="of-d1.jpg" alt="Etapas do consentimento com um stepper numerado no topo" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
-<div class="decision reveal"><div class="text"><h3>02 — Os bancos mais usados primeiro</h3><p>Escolher de onde trazer os dados é a primeira etapa do fluxo. No lançamento, ela começava pela busca, com uma lista de instituições em ordem alfabética. Quando tivemos os dados de quais bancos eram mais conectados, validamos com desenvolvimento a viabilidade de um redesenho pra lista. A iteração trouxe os 5 bancos principais como atalhos no topo, com a busca e a lista completa logo abaixo.</p></div><figure><img src="of-d2.jpg" alt="Seleção de banco com as instituições mais frequentes como atalhos" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
+<div class="decision reveal"><div class="text"><h3>02 — Os bancos mais usados primeiro</h3><p>Escolher de onde trazer os dados é a primeira etapa do fluxo. No lançamento, ela começava pela busca, com uma lista de instituições em ordem alfabética. Quando tivemos os dados de quais bancos eram mais conectados, validamos com desenvolvimento a viabilidade de um redesenho pra lista. Desenhei como iteração um atalho com os 5 bancos principais no topo, com a busca e a lista completa logo abaixo.</p></div><figure><img src="of-d2.jpg" alt="Seleção de banco com as instituições mais frequentes como atalhos" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
 <div class="decision reveal"><div class="text"><h3>03 — Visibilidade e controle dos consentimentos</h3><p>Os dados compartilhados ficam num menu fácil de encontrar. Cada consentimento mostra seu status de forma direta (ativo, a vencer, vencido ou encerrado), para a pessoa acompanhar, renovar ou revogar quando quiser.</p></div><figure><img src="of-d3.jpg" alt="Cards de consentimento nos estados a vencer, vencido e encerrado" width="2400" height="876" loading="lazy" decoding="async"></figure></div>
 </section>
 <section class="cols reveal">
-<div class="prose"><h2>Resultado</h2><p>As jornadas foram lançadas na primeira onda do Open Finance no Brasil e <a class="inline" href="https://openfinanceawards.com.br/edicoes/1a-edicao" target="_blank" rel="noopener">reconhecidas em 4 categorias do Open Summit Awards 2022</a>, incluindo o 2º lugar em Case do Ano. No início de 2023, cerca de 1 milhão de clientes do Mercado Pago já tinham compartilhado dados pelo Open Finance (números da empresa divulgados na imprensa).</p></div>
+<div class="prose"><h2>Resultado</h2><p>As jornadas foram lançadas na primeira onda do Open Finance no Brasil e <a class="inline" href="https://openfinanceawards.com.br/edicoes/1a-edicao" target="_blank" rel="noopener">reconhecidas em 4 categorias do Open Summit Awards 2022</a>, incluindo o 2º lugar em Case do Ano. No início de 2023, cerca de 1 milhão de clientes do Mercado Pago já tinham compartilhado dados pelo Open Finance (números da empresa divulgados na imprensa).</p></div>
 <div class="prose"><h2>O que aprendi</h2><p>Vindo do Guiabolso, onde o espaço para imaginar parecia infinito e estávamos criando e refinando processos de trabalho, foi minha primeira vez projetando dentro de uma grande companhia, dentro de regulações bancárias. Com mais processos de trabalho e escopo definidos, a criatividade mudou de lugar, abrindo espaço para exercitar um maior pensamento crítico sobre o real e factível em design de produto.</p></div>
 </section>
 <p class="thanks reveal">Um obrigado especial a Rodrigo, Cadu, Mara, Cinthia, Mel, Tamyres, João e a todo o squad de Open Finance.</p>
@@ -74,6 +74,6 @@
   <a href="open-finance-pt.html" hreflang="pt-BR" lang="pt-BR" aria-current="true">PT-BR</a>
   <a href="open-finance.html" hreflang="en" lang="en">EN</a>
 </nav>
-<script src="script.js?v=5"></script>
+<script src="script.js?v=6"></script>
 </body>
 </html>

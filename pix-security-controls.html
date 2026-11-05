@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.classList.add('js')</script>
+<script>document.documentElement.classList.add('js');try{var s=sessionStorage.getItem('swipe');if(s&&matchMedia('(max-width: 760px)').matches)document.documentElement.classList.add('swipe-in-'+s)}catch(e){}</script>
 <title>Pix Security Controls — Iago Novais</title>
-<meta name="description" content="Designing My Limits and Safe Contacts for millions of Pix users,under a Central Bank deadline.">
+<meta name="description" content="Designing My Limits and Safe Contacts for millions of Pix users, with the deadline and features set by the Central Bank.">
 <meta property="og:title" content="Pix Security Controls — Iago Novais">
-<meta property="og:description" content="Designing My Limits and Safe Contacts for millions of Pix users,under a Central Bank deadline.">
+<meta property="og:description" content="Designing My Limits and Safe Contacts for millions of Pix users, with the deadline and features set by the Central Bank.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#ffffff">
@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
@@ -37,13 +37,13 @@
 
 <main class="case">
 <div class="head"><h1>Pix Security Controls</h1>
-<p class="subtitle">Designing My Limits and Safe Contacts for millions of Pix users, under a Central Bank deadline.</p></div>
-<div class="meta"><div><span class="label">Role</span><p>Product Designer</p></div><div><span class="label">Team</span><p>UX lead, 2 product designers, 2 UX writers, PM, engineering, legal</p></div><div><span class="label">Platform</span><p>iOS &amp; Android · Personal and business accounts</p></div><div><span class="label">Timeline</span><p>2023–2024</p></div></div>
+<p class="subtitle">Designing My Limits and Safe Contacts for millions of Pix users, with the deadline and features set by the Central Bank.</p></div>
+<div class="meta"><div><span class="label">Role</span><p>Product Designer</p></div><div><span class="label">Team</span><p>UX lead, 2 product designers, 2 UX writers, PM, engineering, legal</p></div><div><span class="label">Platform</span><p>iOS &amp; Android · Personal and business accounts</p></div><div><span class="label">Timeline</span><p>2023⁠–⁠2024</p></div></div>
 <figure class="hero reveal"><img src="sc-hero.jpg" alt="A person at an ATM holding a phone with a limit-increase confirmation" width="1440" height="900" loading="eager" decoding="async"></figure>
-<div class="stats reveal" style="--n:4"><div><b>6</b><p>Ways to add a safe contact, in one unified flow</p></div><div><b>5 + 1</b><p>Limit-adjustment flows, plus the day/night period change</p></div><div><b>24 h vs. instant</b><p>Increasing a limit takes up to 24 h; decreasing is immediate</p></div><div><b>1 quarter</b><p>From new regulation to launch</p></div></div>
+<div class="stats reveal" style="--n:4"><div><b>6</b><p>Ways to add a safe contact, in one unified flow</p></div><div><b>5 + 1</b><p>Limit-adjustment flows, with the day/night period change</p></div><div><b>24 h vs. instant</b><p>Increasing a limit takes up to 24 h; decreasing is immediate</p></div><div><b>1 quarter</b><p>From new regulation to launch</p></div></div>
 <section class="cols reveal">
-<div class="prose"><h2>Summary</h2><p>In 2023, Brazil’s Central Bank required every payment app to let users set Pix limits and manage trusted contacts. At Mercado Pago, I designed the flows for My Limits and Safe Contacts, balancing security with the friction of everyday payments.</p><p>After delivering and iterating on the Open Finance flows, the company’s priorities moved to Pix, the area with the most money moving through the app. That year I joined the Pix squad and, with the team on this project, designed the navigation architecture, flows and handoff for My Limits, limits by period and Safe Contacts, for individual and business accounts. I also designed the new limit cards and their edge cases in feedback screens and notifications.</p></div>
-<div class="prose"><h2>Context &amp; challenge</h2><p>Pix is Brazil’s instant payment system, regulated by the Central Bank. Version 6.4 of the Pix Experience Manual required features the app didn’t have: trusted contacts, day and night limits, and limit-increase requests for Pix Saque (cash withdrawal at stores) and Pix Troco (cash back on purchases).</p><p>With the Central Bank’s manual as the guide to which features were required, and by when, I explored ways to deliver a functional, low-friction experience in the menu structure, in how limits are explained, and in error states and notifications.</p></div>
+<div class="prose"><h2>Summary</h2><p>In 2023, Brazil’s Central Bank required every payment app to let users set Pix transfer limits and manage trusted contacts. At Mercado Pago, I designed the flows for My Limits and Safe Contacts, balancing security with the friction of everyday payments.</p><p>After delivering and iterating on the Open Finance flows, the company’s priorities moved to Pix, the area with the most money moving through the app. That year I joined the Pix squad and, with the team on this project, designed the navigation architecture, flows and handoff for My Limits, limits by period and Safe Contacts, for individual and business accounts. I also designed the new limit cards and their edge cases in feedback screens and notifications.</p></div>
+<div class="prose"><h2>Context &amp; challenge</h2><p>Pix is Brazil’s instant payment system, regulated by the Central Bank. Version 6.4 of the Pix Experience Manual required features the app didn’t have: trusted contacts, day and night limits, and limit-increase requests for Pix Saque (cash withdrawal at stores) and Pix Troco (cash back on purchases).</p><p>With the Central Bank’s manual as the guide to which features were required and by when, I explored ways to deliver a functional, low-friction experience for users.</p></div>
 </section>
 <div class="ticker" aria-hidden="true"><div class="track"><span>My Limits → Transfers → Withdrawals → Transaction period → Safe Contacts → </span><span>Increase → New value → Confirm → Face ID → Up to 24 h → Push notification → </span><span>Safe Contacts → CPF · CNPJ · Phone · E-mail · Random key · Past transfer → </span><span>My Limits → Transfers → Withdrawals → Transaction period → Safe Contacts → </span><span>Increase → New value → Confirm → Face ID → Up to 24 h → Push notification → </span><span>Safe Contacts → CPF · CNPJ · Phone · E-mail · Random key · Past transfer → </span></div></div>
 <section><h2>Process</h2><div class="steps reveal">
@@ -63,7 +63,7 @@
 <div class="prose"><h2>Outcome</h2><p>We shipped on the regulatory deadline, and the work was validated by the leadership team for payments and money rails. Impact data is confidential.</p></div>
 <div class="prose"><h2>What I learned</h2><p>A regulatory deadline sometimes means doing the best you can with the time and resources you have. It takes flexibility, or “jogo de cintura”, as we say in Portuguese. The flow held up well after launch, and it was also one of my most end-to-end projects: from the release of the manual to going live and following the data, bringing weekly updates to the team and working through feedback.</p></div>
 </section>
-<p class="thanks reveal">Special thanks to Thiago, Mara, Cadu and Mel.</p>
+<p class="thanks reveal">Special thanks to Thiago, Mara, Cadu, Danilo and Mel.</p>
 <nav class="next"><a href="open-finance.html"><small>Previous</small>← Open Finance Consent Journeys</a><a class="to" href="pix-desktop.html"><small>Next project</small>Pix Area on Desktop →</a></nav>
 </main>
 <footer class="inner">
@@ -74,6 +74,6 @@
   <a href="pix-security-controls-pt.html" hreflang="pt-BR" lang="pt-BR">PT-BR</a>
   <a href="pix-security-controls.html" hreflang="en" lang="en" aria-current="true">EN</a>
 </nav>
-<script src="script.js?v=5"></script>
+<script src="script.js?v=6"></script>
 </body>
 </html>
